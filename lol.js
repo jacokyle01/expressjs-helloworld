@@ -5,10 +5,6 @@ const path = require('path');
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 app.get('/', (req, res) => {
-    res.send('lol');
-});
-
-app.get('/biden', (req, res) => {
     const filePath = path.join(__dirname, 'lol.html');
     res.sendFile(filePath);
 });
